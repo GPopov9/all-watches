@@ -1,0 +1,23 @@
+/* src/components/Header/Header.module.css */
+@import "../../../styles/theme.css";
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--color-muted);
+  font-family: var(--font-body);
+}
+
+.p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;  
+}
+
+@media (max-width: 768px) {
+
+}

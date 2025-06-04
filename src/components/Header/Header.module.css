@@ -1,0 +1,79 @@
+/* src/components/Header/Header.module.css */
+@import "../../styles/theme.css";
+
+.header {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: var(--font-body);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+ /*  display: flex; */
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--color-dark);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.menuButton {
+    display: none;
+  }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--color-muted);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+      display: block;
+      border: none;
+    }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--color-bg);
+/*     position: absolute; */
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 1rem 0.5rem;
+/*     border-top: 1px solid #eee; */
+  }
+
+  .navOpen {
+    display: flex;
+  }
+}
